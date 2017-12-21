@@ -14,6 +14,7 @@ import {
 } from 'react-native';
 
 import * as PrimaryNav from "./components/AppNavigation";
+import * as DrawerNavigation from "./config/router";
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -40,7 +41,7 @@ export default class App extends React.Component<object, object> {
     // const { navigation } = this.props;
     return (
       <View style={styles.container}>
-       <Text>Properties:</Text> 
+        <Text>matchCardz</Text> 
       </View>
     );
   }
