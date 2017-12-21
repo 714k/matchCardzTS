@@ -9,8 +9,11 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View
+  View,
+  Button
 } from 'react-native';
+
+import * as PrimaryNav from "./components/AppNavigation";
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -25,32 +28,19 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#F5FCFF',
-    },
-    welcome: {
-        fontSize: 20,
-        textAlign: 'center',
-        margin: 10,
-    },
-    instructions: {
-        textAlign: 'center',
-        color: '#333333',
-        marginBottom: 5,
-    },
+    }
 });
 
 export default class App extends React.Component<object, object> {
+  static navigationOptions = {
+    drawerLabel: 'Home'
+  };
+
   render() {
+    // const { navigation } = this.props;
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native with TS!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
+       <Text>Properties:</Text> 
       </View>
     );
   }

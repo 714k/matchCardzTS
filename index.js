@@ -1,4 +1,4 @@
 import { AppRegistry } from 'react-native';
-import App from './lib/App';
+import App from './build/App';
 
 AppRegistry.registerComponent('matchCardz', () => App);
